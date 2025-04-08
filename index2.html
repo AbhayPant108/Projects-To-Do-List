@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List | Task Management Tool</title>
+    <link rel="stylesheet" href="styling2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<header>
+    <nav>
+        <div class="title">
+            To-Do List
+             
+        </div>
+           
+        <div class="menu">
+            <a href="#" class="click">Home</a>
+             <a href="#" class="click" id="addtask">Add Task</a>
+             
+       
+             
+       
+            <a href="#about" class="click">About</a>
+            <a style="cursor: pointer;" class="contact-link click">Contact</a>
+           
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="task-container">
+ 
+        <div class="add-task">
+            <input type="text" id="taskInput" placeholder="Enter a new task...">
+            <button id="addBtn"><i class="fa-solid fa-plus fa-xl" style="color: #ffffff;"></i></button>
+        </div>
+        <div class="task-list">
+            <div class="progress-container">
+            <h2 class="progress-title">Progress</h2>
+            <span id="progress">You are 0% there</span>
+            <div class="progress-bar">
+                <div  class="progress-bar-fill"></div>
+            </div>
+            </div>
+            <h2 class="task-title">Your Tasks</h2>
+            <ul id="tasks"></ul>
+           
+        </div>
+       
+  <button id="delete_all"><i class="fa-solid fa-trash" style="color: #ffffff;"></i> <span style="padding-left: 3px;"> REMOVE ALL</span></button>
+    </section>
+
+<section class="about-section" id="about">
+    <div class="about-container">
+        <h2 class="about-title">About My To-Do List Website</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Welcome to my simple To-Do List Website. I designed this tool to help you organize your tasks efficiently and boost your productivity.</p>
+                <p>My Website features:</p>
+                <ul class="about-features">
+                    <li>Easy task creation and management</li>
+                    <li>Visual progress tracking</li>
+                    <li>Simple task completion marking</li>
+                    <li>Clean and intuitive interface</li>
+                </ul>
+                <p>Whether you're a student, professional, or just someone looking to stay organized, My To-Do List Website is designed to make your life easier.</p>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+    
+     
+<script src="js2.js"></script>
+</main>
+<footer>
+    <div class="contact-section" id="contactsection">
+        <h3 class="contact-title">Contact Us</h3>
+        <p>Have questions or suggestions? Reach out to us!</p>
+        <div class="contact-form">
+            <input type="text" placeholder="Your Name" class="contact-input" id="contact-name">
+            <input type="email" placeholder="Your Email" class="contact-input" id="contact-email">
+            <textarea placeholder="Your Message" class="contact-textarea" id="contact-message"></textarea>
+            <button class="contact-submit" >Send Message</button>
+        </div>
+        <div class="contact-info">
+            <p class="underline"="border-bottom: 1px solid black;"><span><strong>Email:</strong> <a class="hover-underline" href="mailto: abhaypant57@gmail.com">abhaypant57@gmail.com</a></span></p>
+
+            <p class="underline"><span><b>Phone:</b><a class="hover-underline" style="color: #4caf50;" href="tel:+(91) 7982800766">(+91) 7982800766</a></span></p>
+
+            <p class="underline"><span><strong>LinkedIn:</strong> <a  id="linkedin" class="hover-underline" target="_blank" href="https://www.linkedin.com/in/abhaypant108">Visit <i class="fa-solid fa-arrow-up-right-from-square fa-xs" style="color: #4caf50;"></i></a></span></p>
+            
+        </div>
+    </div>
+    <p>Copyright &copy; 2025 To-Do List. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

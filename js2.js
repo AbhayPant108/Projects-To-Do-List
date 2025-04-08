@@ -46,7 +46,12 @@ document.addEventListener('DOMContentLoaded', function() {
             const taskItem = target.closest('.task-item');
            const completed =  taskItem.classList.toggle('completed');
           
-completed?cnt++:cnt--;
+if(completed)
+    cnt++;
+        
+else
+    cnt--;
+            
 progress();
          
         }
@@ -57,10 +62,10 @@ progress();
             cnt--;
             
            }
-           else{
+           
             total--;
             
-           }
+           
            progress();
                taskItem.remove();  
                   checktask();

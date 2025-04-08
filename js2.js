@@ -6,7 +6,7 @@ document.getElementsByClassName('contact-link')[0].addEventListener('click', fun
     document.getElementById('contact-name').focus();
 });
 function checktask(){
-if(document.getElementById('tasks').childNodes.length==0){
+if(document.getElementById('tasks').children.length==0){
    document.getElementsByClassName('task-title')[0].innerHTML='No tasks yet';
    document.getElementsByClassName('progress-container')[0].style.display='none';
    total=0;
